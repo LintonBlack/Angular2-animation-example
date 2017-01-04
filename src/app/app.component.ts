@@ -10,6 +10,7 @@ import { Component, trigger, state, style, transition, animate } from '@angular/
   		state('stop', style({
   			'background-color':'red'
   		})),
+  		transition('void => *', animate(0)),
   		transition('* => *', animate(500))
   	])
   ],
