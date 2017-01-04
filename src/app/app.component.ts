@@ -1,4 +1,4 @@
-import { Component, trigger, state, style } from '@angular/core';
+import { Component, trigger, state, style, transition, animate } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,8 @@ import { Component, trigger, state, style } from '@angular/core';
   		})),
   		state('stop', style({
   			'background-color':'red'
-  		}))
+  		})),
+  		transition('* => *', animate(500))
   	])
   ],
   templateUrl: './app.component.html',
