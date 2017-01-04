@@ -5,7 +5,7 @@ import { Component, trigger, state, style, transition, animate } from '@angular/
   animations:[
   	trigger('signal', [
   		state('void', style({
-  			'background-color':'orange'
+  			'transform':'translateY(-100%)'
   		})),
   		state('go', style({
   			'background-color':'green'
@@ -24,6 +24,7 @@ import { Component, trigger, state, style, transition, animate } from '@angular/
 export class AppComponent {
   
   signal;
+  isHere = false;
 
   constructor() {
   	this.signal = 'stop'
@@ -31,5 +32,9 @@ export class AppComponent {
 
   onClick(step) {
   	this.signal = step;
+  }
+
+  onToggleClick() {
+  	this.isHere = !this.isHere;
   }
 }
