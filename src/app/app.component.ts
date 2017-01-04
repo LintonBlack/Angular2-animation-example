@@ -21,6 +21,7 @@ import {
   		state('stop', style({
   			'background-color':'red'
   		})),
+  		// could be from * => * or from go => stop ... or two-way binding * <=> *
   		transition('void => *', animate(5000, keyframes([
   				style({'transform' : 'scale(0)'}),
   				style({'transform' : 'scale(.5)'}),
