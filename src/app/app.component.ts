@@ -14,7 +14,7 @@ import { Component, trigger, state, style, transition, animate } from '@angular/
   			'background-color':'red'
   		})),
   		transition('void => *', animate(1000)),
-  		transition('* => *', animate(500))
+  		transition('* => *', animate('2s 1s ease-out'))
   	])
   ],
   templateUrl: './app.component.html',
