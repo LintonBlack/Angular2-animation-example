@@ -1,1 +1,8 @@
-<div [@signal]="'go'" class="traffic-light"></div>
+
+<div class="row">
+  <div class="small-3 large-centered columns">
+  	<div [@signal]="signal" class="traffic-light"></div>
+	<button class="button" (click)="onClick('go')">Go</button>
+  </div>
+</div>
+
