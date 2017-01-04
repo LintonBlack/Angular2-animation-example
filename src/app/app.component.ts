@@ -2,6 +2,12 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
+  animations:[
+  	trigger('signal', [
+  		state('go', style({
+  			'background-color':'green'
+  		}))])
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
